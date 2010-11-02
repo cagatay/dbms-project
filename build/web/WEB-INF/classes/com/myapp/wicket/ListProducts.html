@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:wicket>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>ListProducts</title>
+        <link wicket:id='stylesheet'/>
+        <style type="text/css">
+                a:link{color:red; text-decoration:none}
+		a:visited{color:purple; text-decoration:none}
+		a:hover{color:orange; text-decoration:underline}
+		a:active{color:blue}
+        </style>        
+    </head>
+    <body>
+        
+        <wicket:panel>
+            <div><a  wicket:id="addlink" href="#"><span wicket:id="addlabel">Add New</span></a></div>
+            <div wicket:id="products" style="width:20%; height: 20%; float:left; border: 2px; margin-bottom: 20px; margin-right: 20px; border-color:black">
+                <a wicket:id="link" href="#">
+                    <img wicket:id ="image"/><br/>
+                    <span wicket:id="brand">brand</span><br/>
+                    <span wicket:id="model">model</span>
+                </a>
+            </div>&nbsp&nbsp
+
+            <div wicket:id="navigator" style="position:fixed; bottom:10%; text-align: center;"></div>
+        </wicket:panel>
+    </body>
+</html>
+

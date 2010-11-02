@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>EditDetailsPage</title>
+    </head>
+    <body>
+        <form wicket:id="EditDetails" action="#">
+            Change Password <br/>
+            Current Password: <input type="password" wicket:id="currPass"/><br/>
+            New Password    : <input type="password" wicket:id="newPass"/><br/>
+            Confirm Password: <input type="password" wicket:id="conPass"></input>
+            <input type="submit" value="Submit"/>
+        </form>
+        <span wicket:id="fpanel">
+        </span>
+    </body>
+</html>

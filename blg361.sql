@@ -1,0 +1,40 @@
+CREATE DATABASE blg361;
+USE blg361;
+
+CREATE TABLE members (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  email VARCHAR(40),
+  pass VARCHAR(10),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE products (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  brandid INTEGER,
+  model VARCHAR(40),
+  categoryid INTEGER,
+  votes INTEGER DEFAULT 0,
+  total INTEGER DEFAULT 0,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE brands (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(40),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE categories (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(40),
+  parentid INTEGER,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE comments (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  productid INTEGER,
+  userid INTEGER,
+  tm TIMESTAMP,
+  PRIMARY KEY (id)
+);
